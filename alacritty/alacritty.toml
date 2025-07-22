@@ -1,0 +1,17 @@
+[window]
+
+title = "Terminal"
+blur = true
+opacity = 1
+dimensions = { columns = 100, lines = 24 }
+
+[font]
+
+normal = { family = "JetBrains Mono Nerd Font", style = "Medium" }
+bold = { family = "JetBrains Mono Nerd Font", style = "Bold" }
+italic = { family = "JetBrains Mono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrains Mono Nerd Font", style = "BoldItalic" }
+size = 14
+
+[cursor]
+style = { shape = "Block", blinking = "Never" }
