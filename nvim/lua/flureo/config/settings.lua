@@ -51,6 +51,9 @@ vim.lsp.enable('lua_ls')
 vim.lsp.enable('clangd')
 vim.lsp.enable('cmake')
 vim.lsp.enable('pyright')
+vim.lsp.enable('ast_grep')
+vim.lsp.enable('tsserver')
+require'lspconfig'.tsserver.setup {}
 
 -- [Noice]
 require("noice").setup({
