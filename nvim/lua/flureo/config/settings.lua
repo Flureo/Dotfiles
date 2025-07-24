@@ -11,6 +11,11 @@ vim.keymap.set("n", "<leader>th", vim.cmd.tabpre)
 local builtin = require('telescope.builtin')
 vim.keymap.set("n", "<leader>fs", builtin.find_files)
 
+vim.opt.tabstop = 2
+vim.opt.softtabstop=2
+vim.opt.shiftwidth=2
+vim.expandtab = true
+
 -- [Style]
 vim.cmd.colorscheme "catppuccin-mocha"
 vim.wo.number = true
