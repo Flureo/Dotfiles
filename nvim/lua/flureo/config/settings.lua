@@ -1,25 +1,41 @@
 -- [Keybinds]
-vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>w", vim.cmd.write)
+vim.keymap.set("n", "<leader>q", vim.cmd.quit)
 
 -- Tabs
-vim.keymap.set("n", "<leader>tn", vim.cmd.tabnew)
-vim.keymap.set("n", "<leader>td", vim.cmd.tabclose)
-vim.keymap.set("n", "<leader>tl", vim.cmd.tabnext)
-vim.keymap.set("n", "<leader>th", vim.cmd.tabpre)
+vim.keymap.set("n", "<C-t>", vim.cmd.tabnew)
+vim.keymap.set("n", "<C-r>", vim.cmd.tabclose)
+vim.keymap.set("n", "<C-l>", vim.cmd.tabnext)
+vim.keymap.set("n", "<C-k>", vim.cmd.tabpre)
 
 -- Telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set("n", "<leader>fs", builtin.find_files)
+vim.keymap.set("n", "<leader>f", builtin.find_files)
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop=2
-vim.opt.shiftwidth=2
-vim.expandtab = true
+-- Lazy
+vim.keymap.set("n", "<leader>l", vim.cmd.Lazy)
+
+-- Mason
+vim.keymap.set("n", "<leader>m", vim.cmd.Mason)
 
 -- [Style]
-vim.cmd.colorscheme "catppuccin-mocha"
+vim.cmd.colorscheme "tokyonight"
+vim.opt.termguicolors = true
+
 vim.wo.number = true
 vim.wo.relativenumber = true
+
+vim.opt.tabstop = 4
+vim.opt.softtabstop=4
+vim.opt.shiftwidth=4
+vim.expandtab = true
+vim.opt.smartindent = true
+
+vim.opt.guicursor = ""
+vim.opt.wrap = false
+
+vim.opt.scrolloff = 8
 
 -- [Lspconfig]
 
@@ -55,10 +71,7 @@ lspconfig.lua_ls.setup {
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('clangd')
 vim.lsp.enable('cmake')
-vim.lsp.enable('pyright')
 vim.lsp.enable('ast_grep')
-vim.lsp.enable('tsserver')
-require'lspconfig'.tsserver.setup {}
 
 -- [Noice]
 require("noice").setup({
