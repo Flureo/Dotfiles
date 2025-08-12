@@ -15,3 +15,6 @@ size = 14
 
 [cursor]
 style = { shape = "Block", blinking = "Never" }
+
+[terminal]
+shell = "/bin/fish"

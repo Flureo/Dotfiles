@@ -1,1 +1,2 @@
-require("flureo.init")
+require("config.default")
+require("config.lazy")
