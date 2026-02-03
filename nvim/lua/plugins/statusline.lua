@@ -1,12 +1,13 @@
 return {
     'nvim-lualine/lualine.nvim',
-	config = function()
-		require("lualine").setup({
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+	config = function ()
+		require('lualine').setup {
 			options = {
-				globalstatus = true,
+				icons_enabled = false,
 				component_separators = {},
 				section_separators = {},
 			}
-		})
+		}
 	end
 }

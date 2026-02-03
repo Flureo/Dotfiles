@@ -1,8 +1,8 @@
 [window]
 
 title = "Terminal"
-blur = true
-opacity = 1
+blur = false
+opacity = 0.75
 dimensions = { columns = 100, lines = 24 }
 
 [font]
@@ -15,3 +15,6 @@ size = 14
 
 [cursor]
 style = { shape = "Block", blinking = "Never" }
+
+[colors.primary]
+background = "#000000"
