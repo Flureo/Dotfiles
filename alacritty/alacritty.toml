@@ -1,12 +1,15 @@
-[window]
+[general]
+import = [
+	"~/.config/alacritty/colorschemes/main.toml"
+]
 
+[window]
 title = "Terminal"
 blur = false
 opacity = 0.75
 dimensions = { columns = 100, lines = 24 }
 
 [font]
-
 normal = { family = "JetBrains Mono Nerd Font", style = "Medium" }
 bold = { family = "JetBrains Mono Nerd Font", style = "Bold" }
 italic = { family = "JetBrains Mono Nerd Font", style = "Italic" }
@@ -15,6 +18,3 @@ size = 14
 
 [cursor]
 style = { shape = "Block", blinking = "Never" }
-
-[colors.primary]
-background = "#000000"

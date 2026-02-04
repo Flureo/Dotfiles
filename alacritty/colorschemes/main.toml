@@ -1,0 +1,36 @@
+# Default colors
+[colors.primary]
+background = '#000000' # base
+foreground = '#ffffff' # text
+
+# Cursor colors
+[colors.cursor]
+text = '#1a1b26' # base
+cursor = '#c0caf5' # rosewater
+
+# Selection colors
+[colors.selection]
+text = '#7aa2f7' # base
+background = '#28344a' # rosewater
+
+# Normal colors
+[colors.normal]
+black = '#414868' # surface1
+red = '#f7768e' # red
+green = '#73daca' # green
+yellow = '#e0af68' # yellow
+blue = '#7aa2f7' # blue
+magenta = '#bb9af7' # pink
+cyan = '#7dcfff' # teal
+white = '#c0caf5' # subtext1
+
+# Bright colors
+[colors.bright]
+black = '#4f5b7e' # surface2
+red = '#F99FAF' # red
+green = '#8FE1D4' # green
+yellow = '#e3b777' # yellow
+blue = '#87abf7' # blue
+magenta = '#c1a4f7' # pink
+cyan = '#8ad3ff' # teal
+white = '#c6cff6' # subtext0
