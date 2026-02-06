@@ -8,9 +8,10 @@ HISTSIZE=300
 HISTFILESIZE=300
 
 alias ls='ls --color=auto -a'
+alias grep='grep --color=auto'
+alias shutdown='shutdown 0'
 alias rm='rm -r'
 alias cp='cp -r'
-alias grep='grep --color=auto'
 alias ..='cd ..'
 alias ~='cd ~/'
 alias c='clear'
