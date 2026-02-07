@@ -2,13 +2,14 @@
     "layer": "top",
     "position": "top",
     "height": 30,
+	"margin": "5px 5px 2px 5px",
     "modules-left": [
-    ],
-    "modules-center": [
         "hyprland/workspaces"
     ],
+    "modules-center": [
+        "clock"
+    ],
     "modules-right": [
-        "clock",
         "pulseaudio",
         "network",
         "battery",
